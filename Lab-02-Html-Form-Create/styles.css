@@ -24,6 +24,7 @@ body{
     padding:0;
     border-radius:15px;
   }
+  
   #description{
     text-align:center;
     font-size:16px;
@@ -45,8 +46,8 @@ body{
     flex-wrap:wrap;
     padding:1%;
   }
-
-label.left{
+  
+  label.left{
     width:30%;
     padding-right:4%;
     text-align:right;
@@ -70,7 +71,7 @@ label.left{
     border: 1px solid #c0c0c0;
     border-radius: 2px;
   }
-
+  
   .radio-qus{
     position:relative;
     padding:3px;
@@ -100,8 +101,8 @@ label.left{
     width:65%;
     border-radius:4px;
   }
-
-#submit{
+  
+  #submit{
     background:#3966c1;
     font-family:Roboto;
     border-radius:2px;
@@ -114,7 +115,7 @@ label.left{
     cursor:pointer;
   }
   
-  /* @media (max-width: 800px) {
+  @media (max-width: 800px) {
     body {
       font-size: 12px;
     }
@@ -124,5 +125,4 @@ label.left{
     body {
       font-size: 9px;
     }
-  } */
-
+  }
