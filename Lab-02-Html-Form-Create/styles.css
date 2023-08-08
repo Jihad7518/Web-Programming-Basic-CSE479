@@ -70,7 +70,36 @@ label.left{
     border: 1px solid #c0c0c0;
     border-radius: 2px;
   }
+
+  .radio-qus{
+    position:relative;
+    padding:3px;
+    right:3px;
+    bottom:15px;
+  }
   
+  .radio{
+    position:relative;
+    padding:3px;
+    bottom:15px;
+  }
+  
+  h2{
+    position:relative;
+    bottom:8px;
+    font-size:16px;
+    text-align:center;
+    font-weight:bold;
+  }
+  
+  .commentbox{
+    text-align:center;
+  }
+  
+  textarea{
+    width:65%;
+    border-radius:4px;
+  }
 
 
 
