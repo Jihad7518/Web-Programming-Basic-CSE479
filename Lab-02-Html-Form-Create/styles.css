@@ -46,4 +46,31 @@ body{
     padding:1%;
   }
 
+label.left{
+    width:30%;
+    padding-right:4%;
+    text-align:right;
+  }
+  
+  
+  .right{
+    width:30%;
+  }
+  
+  .input-field{
+    height:20px;
+    padding:5px;
+    border: 1px solid #c0c0c0;
+    border-radius: 2px;
+  }
+  
+  #dropdown{
+    font-family:Quicksand;
+    height:30px;
+    border: 1px solid #c0c0c0;
+    border-radius: 2px;
+  }
+  
+
+
 
