@@ -1,1 +1,28 @@
 
+body{
+    /* background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); */
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(120,10,101,1) 100%, rgba(0,212,255,1) 100%);
+  }
+  
+  header{
+    font-family:Roboto;
+    font-size:20px;
+    color:white;
+    font-weight:bold;
+    text-align:center;
+    margin-top:20px;
+    margin-bottom:20px;
+  }
+  
+  #survey-form{
+    background-color:#fbf9f9e4;
+    font-family:Quicksand;
+    max-width:70%;
+    margin:auto;
+    padding:0;
+    border-radius:15px;
+  }
+  
+
