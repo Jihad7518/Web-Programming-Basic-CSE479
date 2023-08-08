@@ -24,5 +24,26 @@ body{
     padding:0;
     border-radius:15px;
   }
+  #description{
+    text-align:center;
+    font-size:16px;
+    padding-top:17px;
+    font-weight:bold;
+  }
   
+  .fieldset{
+    border-width:0;
+    padding-top:1%;
+  
+  }
+  
+  .sub-group{
+    position:relative;
+    right:30px;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    padding:1%;
+  }
+
 
