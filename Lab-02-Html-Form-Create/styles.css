@@ -101,5 +101,28 @@ label.left{
     border-radius:4px;
   }
 
-
+#submit{
+    background:#3966c1;
+    font-family:Roboto;
+    border-radius:2px;
+    font-size:18px;
+    margin-top: 4px;
+    color: white;
+  }
+  
+  label:hover{
+    cursor:pointer;
+  }
+  
+  /* @media (max-width: 800px) {
+    body {
+      font-size: 12px;
+    }
+  }
+  
+  @media (max-width: 580px) {
+    body {
+      font-size: 9px;
+    }
+  } */
 
