@@ -21,3 +21,22 @@
                 header("Location: index.php");
                 exit;
             }
+// Check if the form is submitted
+            if ($_SERVER["REQUEST_METHOD"] === "POST") {
+                // Get the entered username and password
+                $username = $_POST["username"];
+                $password = $_POST["password"];
+
+                // Validate the credentials
+                if ($username === $valid_username && $password === $valid_password) {
+                    // If the credentials are valid, set session variables and redirect to index.php
+                    $_SESSION["loggedin"] = true;
+                    $_SESSION["username"] = $username;
+                    header("Location: index.php");
+                    exit;
+                } else {
+                    //$login_error = "Invalid username or password.";
+                    echo "<div class='toast show-toast'>Username or Password wrong.</div>";
+                }
+            }
+        ?>
