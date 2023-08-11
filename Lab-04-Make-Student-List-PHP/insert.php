@@ -17,3 +17,17 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $student_name = $_POST['student_name'];
     $student_id = $_POST['student_id'];
     $phone_number = $_POST['phone_number'];
+
+    // Prepare and execute the SQL statement
+    $sql = "INSERT INTO student (student_name, student_id, phone_number) VALUES ('$student_name', '$student_id', '$phone_number')";
+
+    if ($connection->query($sql) === TRUE) {
+        echo "<div class='toast show-toast'>New student added successfully.</div>";
+    } else {
+        echo "Error: " . $sql . "<br>" . $connection->error;
+    }
+
+    $connection->close();
+}
+?>
+
