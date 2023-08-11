@@ -20,3 +20,22 @@
     $password = ''; // Your MySQL password
     $database = 'cse479_studentinfo'; // The name of the database i created
 
+$connection = new mysqli($host, $username, $password, $database);
+
+    if ($connection->connect_error) {
+        die('Connection failed: ' . $connection->connect_error);
+    }
+
+    $sql = "SELECT * FROM student";
+    $result = $connection->query($sql);
+
+    ?>
+
+
+    <div class="container">
+        <h1>Student Information</h1>
+        <a href="insert.php" class="page-link">Add New Student</a><br>
+        <a href="delete.php" class="page-link">Delete Student</a><br>
+        <a href="update.php" class="page-link">Update Student</a><br>
+        <a href="search.php" class="page-link">Search Student</a><br>
+
