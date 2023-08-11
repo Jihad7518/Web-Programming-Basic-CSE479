@@ -53,4 +53,26 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                 <label for="student_id">Student ID:</label>
                 <input type="text" name="student_id" required>
             </div>
+            
+            <div class="form-group">
+                <label for="phone_number">Phone Number:</label>
+                <input type="text" name="phone_number" required>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+
+        <a href="index.php" class="back-link">Back to Student List</a>
+    </div>
+
+    <!-- JavaScript for the toast notification -->
+    <script>
+        // Close the toast notification after 3 seconds (3000 milliseconds)
+        setTimeout(function () {
+            var toast = document.querySelector('.toast');
+            toast.classList.remove('show-toast');
+        }, 3000);
+    </script>
 
