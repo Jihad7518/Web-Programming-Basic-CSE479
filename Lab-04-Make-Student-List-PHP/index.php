@@ -39,3 +39,24 @@ $connection = new mysqli($host, $username, $password, $database);
         <a href="update.php" class="page-link">Update Student</a><br>
         <a href="search.php" class="page-link">Search Student</a><br>
 
+        <!-- Display student information from the database here -->
+        <?php
+            if ($result->num_rows > 0) {
+                echo "<h2 class='student-list'>Student List</h2>";
+                echo "<table border='1' class='student-list-table'>";
+                echo "<tr><th class='student-list-table-th'>Student ID</th><th class='student-list-table-th'>Name</th><th class='student-list-table-th'>Phone Number</th></tr>";
+                while ($row = $result->fetch_assoc()) {
+                    echo "<tr>";
+                    echo "<td class='student-list-table-td'>".$row['student_id']."</td>";
+                    echo "<td class='student-list-table-td'>".$row['student_name']."</td>";
+                    echo "<td class='student-list-table-td'>".$row['phone_number']."</td>";
+                    echo "</tr>";
+                }
+                echo "</table>";
+            } else {
+                echo "<p class='no-student'>No students found.</p>";
+            }
+
+            $connection->close();
+        ?>
+
