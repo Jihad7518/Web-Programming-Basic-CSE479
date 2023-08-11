@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,7 +22,8 @@
                 header("Location: index.php");
                 exit;
             }
-// Check if the form is submitted
+
+            // Check if the form is submitted
             if ($_SERVER["REQUEST_METHOD"] === "POST") {
                 // Get the entered username and password
                 $username = $_POST["username"];
@@ -40,7 +42,8 @@
                 }
             }
         ?>
-                <form method="post" action="login.php" class="login-form">
+
+        <form method="post" action="login.php" class="login-form">
             <div class="form-group">
                 <label for="username">Username:</label>
                 <input type="text" name="username" required>
@@ -56,4 +59,16 @@
             </div>
         </form>
     </div>
+
+    <!-- JavaScript for the toast notification -->
+    <script>
+        // Close the toast notification after 3 seconds (3000 milliseconds)
+        setTimeout(function () {
+            var toast = document.querySelector('.toast');
+            toast.classList.remove('show-toast');
+        }, 3000);
+    </script>
+
+</body>
+</html>
 
