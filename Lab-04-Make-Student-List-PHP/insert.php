@@ -31,3 +31,26 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 }
 ?>
 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add New Student</title>
+    <link rel="stylesheet" href="css/insert.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Add New Student</h1>
+
+
+        <form method="post" action="insert.php" class="add-student-form">
+            <div class="form-group">
+                <label for="student_name">Student Name:</label>
+                <input type="text" name="student_name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="student_id">Student ID:</label>
+                <input type="text" name="student_id" required>
+            </div>
+
