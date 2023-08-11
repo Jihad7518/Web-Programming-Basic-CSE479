@@ -1,5 +1,4 @@
 
-
 <?php
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $host = 'localhost';
@@ -53,7 +52,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                 <label for="student_id">Student ID:</label>
                 <input type="text" name="student_id" required>
             </div>
-            
+
             <div class="form-group">
                 <label for="phone_number">Phone Number:</label>
                 <input type="text" name="phone_number" required>
@@ -75,4 +74,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             toast.classList.remove('show-toast');
         }, 3000);
     </script>
+
+</body>
+</html>
+
 
