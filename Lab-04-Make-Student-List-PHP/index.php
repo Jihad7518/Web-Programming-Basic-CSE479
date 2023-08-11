@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -20,7 +21,7 @@
     $password = ''; // Your MySQL password
     $database = 'cse479_studentinfo'; // The name of the database i created
 
-$connection = new mysqli($host, $username, $password, $database);
+    $connection = new mysqli($host, $username, $password, $database);
 
     if ($connection->connect_error) {
         die('Connection failed: ' . $connection->connect_error);
@@ -59,4 +60,9 @@ $connection = new mysqli($host, $username, $password, $database);
 
             $connection->close();
         ?>
+
+        <p><a href="logout.php" class="log">Logout</a></p>
+    </div>
+</body>
+</html>
 
