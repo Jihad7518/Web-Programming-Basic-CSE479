@@ -29,3 +29,35 @@ h1 {
     border-radius: 5px;
     width: 125px;
 }
+
+.log {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #4CAF50;
+    border-radius: 5px;
+    width: 60px;
+}
+
+a:hover {
+    background-color: #45a049;
+}
+
+.student-list {
+    margin-top: 20px;
+}
+
+.student-list-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.student-list-table-th,
+.student-list-table-td {
+    padding: 10px;
+    border-bottom: 1px solid #cccccc;
+    text-align: left;
+}
