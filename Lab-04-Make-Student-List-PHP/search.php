@@ -21,3 +21,29 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     if ($connection->connect_error) {
         die('Connection failed: ' . $connection->connect_error);
     }
+    // Retrieve search term from the form
+    $search_term = $_POST['search_term'];
+
+    // Prepare and execute the SQL statement for searching the student records
+    $sql = "SELECT * FROM student WHERE student_name LIKE '%$search_term%' OR student_id = '$search_term' OR phone_number LIKE '%$search_term%'";
+    $result = $connection->query($sql);
+
+    if ($result->num_rows > 0) {
+        echo "<h2 class='student-list'>Search Results</h2>";
+        echo "<table border='1' class='student-list-table'>";
+        echo "<tr><th class='student-list-table-th'>Student ID</th><th class='student-list-table-th'>Name</th><th class='student-list-table-th'>Phone Number</th></tr>";
+        while ($row = $result->fetch_assoc()) {
+            echo "<tr>";
+            echo "<td class='student-list-table-td'>".$row['student_id']."</td>";
+            echo "<td class='student-list-table-td'>".$row['student_name']."</td>";
+            echo "<td class='student-list-table-td'>".$row['phone_number']."</td>";
+            echo "</tr>";
+        }
+        echo "</table>";
+    } else {
+        echo "<p class='no-results'>No matching students found.</p>";
+    }
+
+    $connection->close();
+}
+?>
