@@ -32,3 +32,36 @@ h1 {
     margin-bottom: 8px;
     margin-top: 5px;
 }
+
+
+.form-group input[type="text"] {
+    width: 90%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    margin-bottom: 3px;
+}
+
+.form-group input[type="submit"] {
+    background-color: #4CAF50;
+    color: #ffffff;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 80px;
+    height: 30px;
+    border-radius: 6px;
+    border: none;
+}
+
+.form-group input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.back-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #999999;
+}
