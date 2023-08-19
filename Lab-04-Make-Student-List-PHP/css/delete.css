@@ -22,3 +22,42 @@ h1 {
 .form-group {
     margin-bottom: 20px;
 }
+
+.form-group label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    color: #555555;
+    margin-bottom: 8px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+.form-group input[type="submit"] {
+    background-color: #f44336;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.form-group input[type="submit"]:hover {
+    background-color: #d32f2f;
+}
+
+.back-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #999999;
+}
+
+.back-link:hover {
+    color: #666666;
+}
+
