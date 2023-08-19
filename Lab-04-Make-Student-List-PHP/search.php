@@ -47,3 +47,22 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $connection->close();
 }
 ?>
+<div class="container">
+    <form method="post" action="search.php">
+        <div class="form-group">
+            <label for="search_term">Enter the Student ID to Search:</label>
+            <input type="text" name="search_term" required><br>
+        </div>
+
+        <div class="form-group">
+            <input type="submit" value="Search">
+        </div>
+    </form>
+
+    <a href="index.php" class="back-link">Back to Student List</a>
+
+</div>
+
+
+</body>
+</html>
