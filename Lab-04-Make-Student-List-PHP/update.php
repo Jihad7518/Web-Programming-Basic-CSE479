@@ -38,3 +38,19 @@
         $connection->close();
     }
     ?>
+        <div class="container">
+        <form method="post" action="update.php" class="form-group">
+            <label for="student_id">Student ID to Update:</label>
+            <input type="text" name="student_id" required><br>
+
+            <label for="student_name">Student Name:</label>
+            <input type="text" name="student_name" required><br>
+
+            <label for="phone_number">Phone Number:</label>
+            <input type="text" name="phone_number" required><br>
+
+            <input type="submit" value="Update">
+        </form>
+    </div>
+
+    <a href="index.php" class="back-link">Back to Student List</a>
