@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,6 +20,7 @@
         if ($connection->connect_error) {
             die('Connection failed: ' . $connection->connect_error);
         }
+
         // Retrieve data from the form
         $student_id = $_POST['student_id'];
         $student_name = $_POST['student_name'];
@@ -38,7 +38,8 @@
         $connection->close();
     }
     ?>
-        <div class="container">
+
+    <div class="container">
         <form method="post" action="update.php" class="form-group">
             <label for="student_id">Student ID to Update:</label>
             <input type="text" name="student_id" required><br>
@@ -54,3 +55,15 @@
     </div>
 
     <a href="index.php" class="back-link">Back to Student List</a>
+
+    <!-- JavaScript for the toast notification -->
+    <script>
+        // Close the toast notification after 3 seconds (3000 milliseconds)
+        setTimeout(function () {
+            var toast = document.querySelector('.toast');
+            toast.classList.remove('show-toast');
+        }, 3000);
+    </script>
+
+</body>
+</html>
