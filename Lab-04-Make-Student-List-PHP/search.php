@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,6 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     if ($connection->connect_error) {
         die('Connection failed: ' . $connection->connect_error);
     }
+
     // Retrieve search term from the form
     $search_term = $_POST['search_term'];
 
@@ -47,6 +49,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $connection->close();
 }
 ?>
+
 <div class="container">
     <form method="post" action="search.php">
         <div class="form-group">
