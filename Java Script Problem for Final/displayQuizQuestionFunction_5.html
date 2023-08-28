@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz App</title>
+</head>
+<body>
+    <div id="question-container">
+        <!-- The Question and options will be displayed here -->
+    </div>
+    <button onclick="displayNextQuestion()">Next Question</button>
+
+    <script>
+        const questions = [
+            {
+                question: "What is the capital of France?",
+                options: ["Paris", "Berlin", "Madrid", "London"],
+                correctOption: 0
+            },
+            {
+                question: "Which planet is known as the Red Planet?",
+                options: ["Earth", "Mars", "Venus", "Jupiter"],
+                correctOption: 1
+            }
+            // Add more question objects here...
+        ];
+
+        let currentQuestionIndex = 0;
+
+        function displayQuestion(questionObj) {
+            const questionContainer = document.getElementById("question-container");
+            questionContainer.innerHTML = `
+                <p>${questionObj.question}</p>
+                <ul>
+                    ${questionObj.options.map((option, index) => `
+                        <li><input type="radio" name="options" value="${index}">${option}</li>
+                    `).join('')}
+                </ul>
+            `;
+        }
+
+        function displayNextQuestion() {
+            if (currentQuestionIndex < questions.length) {
+                displayQuestion(questions[currentQuestionIndex]);
+                currentQuestionIndex++;
+            }
+        }
+
+        // Initial question display
+        displayNextQuestion();
+    </script>
+</body>
+</html>
