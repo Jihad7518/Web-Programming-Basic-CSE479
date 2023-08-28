@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>To-Do List</title>
+</head>
+<body>
+    <input type="text" id="taskInput" placeholder="Enter task description">
+    <button onclick="addTask()">Add Task</button>
+
+    <ul id="taskList">
+        <!-- The task will be added here -->
+    </ul>
+    
+    <script>
+        function addTask() {
+            const taskInput = document.getElementById("taskInput");
+            const taskList = document.getElementById("taskList");
+            
+            const taskDescription = taskInput.value.trim();
+            if (taskDescription !== "") {
+                const taskItem = document.createElement("li");
+                taskItem.textContent = taskDescription;
+                taskList.appendChild(taskItem);
+                
+                taskInput.value = ""; // Clear the input
+            }
+        }
+    </script>
+</body>
+</html>
