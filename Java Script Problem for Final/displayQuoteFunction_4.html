@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quote Display</title>
+</head>
+<body>
+    <div id="quote-container">
+        <!-- The content will be updated dynamically using JavaScript -->
+    </div>
+    <button onclick="displayQuote('Be yourself: everyone else is already taken.', 'Oscar Wilde')">Show Quote</button>
+
+    <script>
+        function displayQuote(quote, author) {
+            const quoteContainer = document.getElementById("quote-container");
+            quoteContainer.innerHTML = `<p>"${quote}"</p><p>- ${author}</p>`;
+        }
+    </script>
+</body>
+</html>
