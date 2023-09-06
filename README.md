@@ -10,4 +10,4 @@ Lot's of problem solving with JS and PHP.
 
 Lot's of practice problem for academic exam and lab tasks.
 
-
+It's the resources of my EWU university course CSE479 which is named Web Programming.
